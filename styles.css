@@ -48,12 +48,23 @@ a:hover{ color: var(--blue); }
   border-bottom: 1px solid rgba(246,240,230,0.10);
 }
 
-.topbar-inner{
-  display:flex;
-  align-items:center;
+.topbar-inner {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
-  gap: 14px;
+  gap: 16px;
+}
+
+.topbar-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap; /* prevents stacking */
+}
+
+.topbar-cta .btn {
+  white-space: nowrap; /* keeps text on one line */
+}
+
 }
 
 .brand-name{
@@ -552,4 +563,9 @@ input:focus, textarea:focus{
     0 2px 0 rgba(0,0,0,0.35),
     0 10px 22px rgba(0,0,0,0.35);
 }
+.brand-name {
+  display: block;
+  line-height: 1.2;
+}
+
 
